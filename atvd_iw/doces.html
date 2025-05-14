@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="doces de padaria para todos os gostos!">
+    <meta name="author" content="Júlia e Maysa">
+    <title>Docinhos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid about py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-xl-7">
+                    <div>
+                        <h1 class="display-5 mb-4">Doces de Padaria</h1>
+                        <p class="subtitulo">Clique para selecionar seus doces favoritos!</p>
+
+                        <ul id="lista-doces">
+                            <li onclick="Select('camafeu', this)">Camafeu</li>
+                            <li onclick="Select('merengue', this)">Merengue</li>
+                            <li onclick="Select('banoffe', this)">Banoffe</li>
+                            <li onclick="Select('pudim', this)">Pudim</li>
+                            <li onclick="Select('sonho', this)">Sonho</li>
+                            <li onclick="Select('milfolhas', this)">Mil-folhas</li>
+                            <li onclick="Select('tortalimao', this)">Torta de Limão</li>
+                            <li onclick="Select('cajuzinho', this)">Cajuzinho</li>
+                            <li onclick="Select('pastelnata', this)">Pastel de Nata</li>
+                            <li onclick="Select('carolina', this)">Carolina</li>
+                        </ul>
+
+                        <div class="info">
+							<h3>Selecionados:</h3>
+							<ul id="selecionados"></ul>
+						</div>
+
+						 <div class="info">
+                            <h3>Descrição:</h3>
+                            <p id="descricao"></p>
+                        </div>
+
+                        <button onclick="limparSelecao()">Limpar Seleção</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/funcao.js"></script>
+</body>
+</html>
